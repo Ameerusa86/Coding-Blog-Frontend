@@ -9,13 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "clipboard": "^2.0.11",
     "firebase": "^10.12.3",
     "next": "13.5.4",
+    "prismjs": "^1.29.0",
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
     "@types/node": "^20",
+    "@types/prismjs": "^1.26.4",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10",

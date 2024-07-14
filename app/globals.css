@@ -157,3 +157,82 @@ body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.animate-slideInFromLeft {
+  animation: slideInFromLeft 0.5s ease-in-out;
+}
+
+.delay-100 {
+  animation-delay: 0.1s;
+}
+
+.delay-200 {
+  animation-delay: 0.2s;
+}
+
+.delay-300 {
+  animation-delay: 0.3s;
+}
+
+/* Custom styles for code snippets */
+.prose pre {
+  position: relative;
+  background-color: #2d2d2d; /* Dark background */
+  color: #f8f8f2; /* Light text */
+  padding: 1em; /* Padding around the pre block */
+  border-radius: 0.3em; /* Rounded corners */
+  overflow-x: auto; /* Horizontal scroll for long lines */
+}
+
+.prose pre code {
+  background-color: transparent; /* No background for code inside pre */
+  padding: 0; /* No padding for code inside pre */
+}
+
+.copy-btn {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  background-color: #3b82f6; /* Tailwind blue-500 */
+  color: white;
+  padding: 0.2em 0.6em;
+  border: none;
+  border-radius: 0.3em;
+  cursor: pointer;
+  font-size: 0.8em;
+  z-index: 1;
+  transition: background-color 0.2s;
+}
+
+.copy-btn:hover {
+  background-color: #2563eb; /* Tailwind blue-600 */
+}
+
+.copy-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #2563eb; /* Tailwind blue-600 */
+}

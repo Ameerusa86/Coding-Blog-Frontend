@@ -65,7 +65,7 @@ const BlogsPage = () => {
   return (
     <div className="max-container mb-10">
       <section className="max-container padding-container mb-20 mt-10">
-        <h1 className="bold-52 lg:bold-88">Coding Blog</h1>
+        <h1 className="bold-40 lg:bold-40">Coding Blog</h1>
       </section>
       <div className="flex gap-5">
         {/* Map through the blogs and render a Card component for each blog */}
