@@ -32,9 +32,10 @@ const Card = ({
         <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
           {title}
         </h5>
-        <p className="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
-          {description}
-        </p>
+        <p
+          dangerouslySetInnerHTML={{ __html: description }}
+          className="block font-sans text-base font-light leading-relaxed text-inherit antialiased"
+        ></p>
         <p className="block font-sans text-bold leading-relaxed text-inherit antialiased mt-5">
           By: {author}
         </p>
