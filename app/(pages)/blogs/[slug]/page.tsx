@@ -56,7 +56,8 @@ const BlogDetailsPage = ({ params }: BlogProps) => {
           width={1000}
         />
         <p>By: {blog?.author}</p>
-        <p>{blog?.description}</p>
+        <div dangerouslySetInnerHTML={{ __html: blog?.description }}></div>
+        <div dangerouslySetInnerHTML={{ __html: blog?.body }}></div>
       </section>
     </div>
   );
